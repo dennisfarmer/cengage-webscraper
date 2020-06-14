@@ -1,6 +1,6 @@
 # Cengage Webscraper 
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/dennisfarmer/cengage_webscraper/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/dennisfarmer/cengage-webscraper/master/LICENSE)
 
 ### Requirements:
 `BeautifulSoup, requests, moviepy`
