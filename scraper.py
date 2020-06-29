@@ -7,17 +7,13 @@ import wget
 import re
 import os
 
-
-
 temp_directory = "./tmp"
 mp4_directory = "./mp4_files"
-
 
 def clean_str(x):
     if not isinstance(x, str):
         raise TypeError("expected str instance, {} found".format(type(x)))
     return x.replace(" ", "_").replace("'", "").replace(chr(416),"").lower()
-
 
 with open("unit_names.txt", "r") as f:
     unit_names_list = [line.rstrip("\n").replace(" ","_").replace("'","").replace(".","_").lower()
@@ -25,20 +21,17 @@ with open("unit_names.txt", "r") as f:
 
 unit_names = {i.split(":_", 1)[0]: i.split(":_", 1)[1].replace(":","") for i in unit_names_list}
 
-
 for path in [mp4_directory, temp_directory]:
     try:
         os.mkdir(path)
     except FileExistsError:
         pass
 
-
 for unit in unit_names:
     
     files_to_concat = []
 
     url = "https://www.webassign.net/resources/larcalcet7/menus/larcalcet7_menu_{}.html".format(unit)
-    
     
     ### Fixes for Cengage's terrible webdesign: ##############################################
     
@@ -54,7 +47,6 @@ for unit in unit_names:
                                                    # unit 7.1 if set as regex_default
     
     ##########################################################################################
-    
     
     response = requests.get(url)
     parser = BeautifulSoup(response.content, "html.parser")
