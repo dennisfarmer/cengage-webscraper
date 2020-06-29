@@ -1,6 +1,6 @@
 # Cengage Webscraper 
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/dennisfarmer/cengage_webscraper/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/dennisfarmer/cengage-webscraper/master/LICENSE)
 
 Mr. Iyengar waits to share links to Mosley's Calc I lecture videos via a week by week basis, so I have taken it upon myself to download every lecture video directly from Cengage Webassign to give me enough time to cover the class material. This can probably be edited slightly to allow for use with other course lectures on Cengage. 
 
